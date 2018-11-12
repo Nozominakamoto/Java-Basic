@@ -19,5 +19,31 @@ public class PTra10_06 {
 		 * 各carインスタンスのrunメソッドを実行して、それぞれ「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください。
 		 */
 
+	Car car = new Car();
+
+	car.serialNo = 3333;
+	car.color = "green";
+	car.gasoline = 100;
+
+
+	final int distance = 500;
+
+	int n = 0;
+	int sum = 0;
+	while(true) {
+		int i = car.run();
+		if(i == -1) {
+			break;
+		}
+		sum += i;
+		n++;
+		if(sum <= distance) {
+			System.out.println("目的地にまで"+n+"時間かかりました。残りのガソリンは、"+car.gasoline+"リットルです");
+			break;
+		}
+
+	}
+
+
 	}
 }

@@ -9,6 +9,7 @@ package practice13.common;
 /**
  * 登場するキャラクターの情報とデフォルトの行動を設定したクラスです
  * @author rhizome
+ * 親クラス、スーパークラス
  *
  */
 public class Character {

@@ -7,7 +7,7 @@ public class SuperHero extends Hero {
 
 
 	public int attack() {           //オーバーライド
-		return super.attack() + equipment.getAdditionalDamage();//Heroクラス(super)内のattack()メソッドはpowerを返す
+		return super.attack() + equipment.getAdditionalDamage();
 	}
 
 	public Item getEquipment() {               //アクセサ

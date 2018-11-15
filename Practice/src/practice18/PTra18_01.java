@@ -19,6 +19,10 @@ public class PTra18_01 {
         try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
+
+
+
+                array.add(line);
                 // ★ 1行ごとにArrayListに格納してください
 
             }
@@ -26,6 +30,9 @@ public class PTra18_01 {
             System.out.println("ファイルが見つかりません");
         }
 
+        for(String ArrayList : array) {
+        	System.out.println(ArrayList);
+        }
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
 
